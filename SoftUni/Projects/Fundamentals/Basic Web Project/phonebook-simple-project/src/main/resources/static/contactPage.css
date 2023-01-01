@@ -1,0 +1,33 @@
+hr {
+    position: absolute;
+    top: 55px;
+    width: 2300px;
+}
+ 
+input {
+    position: absolute;
+    left: 50px;
+}
+label {
+    position: absolute;
+    left: 50px;
+    font-size: 14px;
+}
+
+input[name = "name"] {
+    top: 100px;
+}
+input[name = "number"] {
+    top: 150px;
+}
+
+button {
+    position: absolute;
+    top: 200px;
+    background-color: lightgreen;
+    border-width: thin;
+}
+
+#NumberLabel {
+    top: 135px;
+}

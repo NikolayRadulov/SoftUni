@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="https://www.thymeleaf.org">
+<head>
+    <title>Phonebook</title>
+    <link th:href="@{index.css}" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>All contacts</h1>
+    <hr id = "firstLine">
+    <p id = "name">Name</p><p id = "number">Number</p>
+    <hr id = "secondLine">
+    <table>
+        <tr th:each = "contact : ${contacts}">
+            <td class = "names" th:text = "${contact.name}">Not present</td>
+            <td class = "numbers" th:text = "${contact.number}">Not present</td>
+        </tr>
+    </table>
+
+     <button><a th:href = "@{/add}">Add</a></button>
+
+</body>
+<script th:src = "@{index.js}"></script>
+</html>
