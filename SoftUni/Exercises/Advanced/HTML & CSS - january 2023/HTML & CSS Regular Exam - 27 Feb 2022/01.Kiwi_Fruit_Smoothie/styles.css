@@ -1,0 +1,78 @@
+@font-face {
+    font-family: PTSerif;
+    src: url("./PTSerif-Regular.ttf");
+}
+
+body {
+    background-image: url("./image/image1.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    font-family: 'PTSerif';
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-areas: "content image";
+    padding: 20px;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    grid-area: content;
+    padding-right: 20px;
+}
+.content .subtitle {
+    display: flex;
+    justify-content: space-between;
+}
+.content h1 {
+    text-align: center;
+    font-size: 40px;
+}
+.content hr {
+    width: 100%;
+    border: 1px dotted yellowgreen;
+}
+.content ul {
+    padding: 0px;
+    margin-bottom: 30px;
+}
+.content ul li div {
+    height: 30px;
+}
+
+.content ul p{
+    display: inline-block;
+    font-size: 25px;
+}
+.content ul .first_p{
+    color: green;
+    font-weight: 700;
+}
+.content .main_content {
+    font-size: 24px;
+    font-family: 'PTSerif';
+    width: 85%;
+    margin-top: 57px;
+    margin-bottom: 95px;
+}
+td {
+    border: 2px solid green;
+    text-align: center;
+    width: min-content;
+    width: 20px;
+    font-size:20px;
+}
+.row1 {
+    font-weight: bold;
+}
+table {
+  border-collapse: collapse;  
+}
+img {
+    grid-area: image;
+    width: 93%;
+    height: 90%;
+}
