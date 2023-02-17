@@ -1,0 +1,199 @@
+
+@font-face {
+    font-family: Helvetica;
+    src: url('./Helvetica.ttf');
+}
+
+button:hover {
+    background-color: white;
+    color: orange;
+}
+body {
+    margin: 0px;
+    font-family: 'Helvetica';
+    overflow-x: hidden;
+}
+#page-header {
+    display: flex;
+    flex-direction: column;
+}
+
+#page-header .main_list {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+}
+#page-header .main_list li{
+    margin: 10px;
+    width: 150px;
+    padding: 10px 5px;
+    color: gray;
+    text-align: center;
+}
+#page-header .main_list li p{
+    color: gray;
+    margin-top: 15px;
+}
+#page-header li:hover{
+    background-color: rgb(181, 142, 16);
+}
+#page-header .second_list {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    margin-bottom: 0px;
+}
+#page-header .second_list li{
+    margin: 10px;
+    width: 100px;
+    padding: 10px 5px;
+    text-align: center;
+    color: gray;
+}
+
+.logo {
+    background: linear-gradient(to top, rgb(150,104,11), rgb(207,171,59));
+    width: 11%;
+    height: 15%;
+    padding: 20px;
+    position: absolute;
+    top: 100px;
+    left: 10%;
+}
+
+#main-content .header{
+    background-image: url("./image/slider.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 70vh;
+}
+#main-content .in_header{
+    background-color: rgba(0,0,0,0.5);
+    width: 25%;
+    font-size: 18px;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+    top: 25%;
+    left: 5%;
+}
+
+#main-content button {
+    background-color: transparent;
+    color: orange;
+    border: 3px solid white;
+    font-size: 18px;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+#main-content .in_header button:hover {
+    background-color: white;
+    color: orange;
+}
+
+#main-content .content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    background: linear-gradient(to right, rgb(149, 102, 10), rgb(208, 172, 60));
+    color: white;
+}
+#main-content .content ul {
+    text-align: left;
+}
+#main-content .content button {
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid white;
+    background-color:transparent;
+    padding: 5px 10px;
+    color: white;
+    width: 11%;
+    align-self: center;
+    margin-bottom: 30px;
+}
+#main-content .content button:hover {
+    background-color: white;
+    color: orange;
+}
+#main-content .content ul li{
+   margin-bottom: 10px;
+}
+
+#advertise {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+    padding: 10px 50px;
+}
+#advertise h1{
+    font-size: 45px;
+    width: 85%;
+}
+#advertise p{
+    font-size: 18px;
+}
+#advertise ul{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+#advertise ul li{
+    text-align: center;
+}
+#advertise ul li div p{
+    width: 210px;
+    color: gray;
+}
+
+#advertise ul li img{
+    border-radius: 100%;
+    border: 2px solid gray;
+    padding: 1px;
+}
+
+#subscribe {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    flex-wrap: wrap;
+    padding: 10px 15px;
+    align-content: space-between;
+    background-color: rgb(181,142,15);
+    padding-top: 20px;
+}
+#subscribe .text{
+    align-self: flex-start;
+    color: white;
+}
+#subscribe .text h1, p{
+    align-self: flex-start;
+    color: white;
+    margin: 5px;
+}
+#subscribe button{
+    position: relative;
+    left: 65vw;
+    color: white;
+    font-size: 20px;
+    height: 55px;
+    width: 170px;
+    font-weight: bold;
+    border: 3px solid white;
+    background-color:transparent;
+    padding: 5px 10px;
+}
+#subscribe button:hover{
+    background-color: white;
+    color: orange;
+}
+footer {
+    padding: 10px 10px;
+    text-align: center;
+}
