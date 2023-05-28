@@ -1,0 +1,1 @@
+Insert Into games(`name`, `rating`, `budget`, `team_id`) SELECT lower(reverse(substring(`name`, 2, length(`name`)))), `id`, `leader_id`*1000, `id` from teams WHERE `id` <= 9;
