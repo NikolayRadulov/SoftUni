@@ -1,0 +1,1 @@
+DELETE from customers as c where (SELECT count(*) from orders as o where c.id = o.customer_id) = 0; 

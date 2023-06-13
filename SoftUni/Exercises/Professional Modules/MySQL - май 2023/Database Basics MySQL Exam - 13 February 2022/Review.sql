@@ -1,0 +1,1 @@
+SELECT id, content, rating, picture_url, published_at from reviews where substring(`content`, 1, 2) = 'My' and length(`content`) > 61 ORDER BY rating DESC;

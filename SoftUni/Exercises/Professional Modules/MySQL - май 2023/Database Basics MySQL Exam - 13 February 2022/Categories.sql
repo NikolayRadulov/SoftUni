@@ -1,0 +1,1 @@
+SELECT * from categories ORDER BY `name` DESC;

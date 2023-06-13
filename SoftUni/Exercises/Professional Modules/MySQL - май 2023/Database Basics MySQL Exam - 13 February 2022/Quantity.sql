@@ -1,0 +1,1 @@
+SELECT id, brand_id, `name`, quantity_in_stock from products WHERE price > 1000 and quantity_in_stock < 30 ORDER BY quantity_in_stock ASC, id;
