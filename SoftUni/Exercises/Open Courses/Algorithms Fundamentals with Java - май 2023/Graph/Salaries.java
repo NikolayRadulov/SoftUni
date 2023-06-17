@@ -25,13 +25,7 @@ public class Salaries {
 				if(symbols.charAt(j) == 'Y') graph.get(i).add(j);
 			}
 		}
-		/*Map<Integer, Integer> dependensiesMap = getDependencies(graph);
 		
-		int startKey = graph.keySet().stream()
-									 .filter(key -> dependensiesMap.get(key) == 0)
-									 .findFirst()
-									 .orElse(null);
-		*/
 		int totalSalary = 0;
 		for(int i = 0; i < n; i++) {
 			totalSalary += getSalary(i, graph);
