@@ -1,5 +1,6 @@
 package com.example.springintro.service;
 
+import com.example.springintro.model.entity.Author;
 import com.example.springintro.model.entity.Book;
 
 import java.io.IOException;
@@ -20,4 +21,14 @@ public interface BookService {
     List<Book> getAllGoldenBooksWithLessThan5000Copies(String ageRestriction, int copies);
     
     List<Book> getAllBookByPriceRange(BigDecimal min, BigDecimal max);
+    
+    List<String> findAllByText(String substring);
+    
+    List<String> findAllByAuthorSubstring(String substring);
+    
+    int getCountBooksByMinLength(int minLength);
+    
+    int getTotalCopiesOfAuthor(Author author);
+    
+    String getInfoOfBook(String title);
 }

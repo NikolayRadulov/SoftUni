@@ -33,6 +33,10 @@ public class Author extends BaseEntity {
         return lastName;
     }
 
+    public String fullName() {
+    	return firstName + " " + lastName;
+    }
+    
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }

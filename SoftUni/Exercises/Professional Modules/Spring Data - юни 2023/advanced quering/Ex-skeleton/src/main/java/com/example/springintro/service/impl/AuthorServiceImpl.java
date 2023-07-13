@@ -61,4 +61,15 @@ public class AuthorServiceImpl implements AuthorService {
                         author.getBooks().size()))
                 .collect(Collectors.toList());
     }
+
+	@Override
+	public List<String> getAllAuthoursByNameSuffrix(String suffix) {
+		return authorRepository.findByNameSuffix(suffix).stream().map(author -> author.fullName()).collect(Collectors.toList());
+	}
+
+	@Override
+	public Author getByName(String firstName, String lastName) {
+		// TODO Auto-generated method stub
+		return authorRepository.findByFirstNameAndLastName(firstName, lastName);
+	}
 }

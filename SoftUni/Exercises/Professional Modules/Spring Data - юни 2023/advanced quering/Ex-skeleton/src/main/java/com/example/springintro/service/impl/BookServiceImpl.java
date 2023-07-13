@@ -113,4 +113,40 @@ public class BookServiceImpl implements BookService {
 		// TODO Auto-generated method stub
 		return bookRepository.findAllByPriceLessThanOrPriceGreaterThan(min, max);
 	}
+
+	@Override
+	public List<String> findAllByText(String substring) {
+		
+		return bookRepository.findByText(substring).stream().map(book -> book.getTitle()).collect(Collectors.toList());
+	}
+
+	@Override
+	public List<String> findAllByAuthorSubstring(String substring) {
+		// TODO Auto-generated method stub
+		return bookRepository.getAllByAuthorName(substring).stream().map(book -> String.format("%s (%s %s)", book.getTitle(), book.getAuthor().getFirstName(), book.getAuthor().getLastName())).collect(Collectors.toList());
+	}
+
+	@Override
+	public int getCountBooksByMinLength(int minLength) {
+		// TODO Auto-generated method stub
+		return bookRepository.getAllByMinLength(minLength).size();
+	}
+
+	@Override
+	public int getTotalCopiesOfAuthor(Author author) {
+		List<Book> books = bookRepository.getAllByAuthor(author);
+		int totalCopies = 0;
+		for(Book book : books) {
+			totalCopies += book.getCopies();
+		}
+		return totalCopies;
+	}
+
+	@Override
+	public String getInfoOfBook(String title) {
+		Book book = bookRepository.getByTitle(title);
+		
+		String info = String.format("%s %s %s %.2f", book.getTitle(), book.getEditionType(), book.getAgeRestriction(), book.getPrice());
+		return info;
+	}
 }
