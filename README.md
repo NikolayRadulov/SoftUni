@@ -1,5 +1,5 @@
 # SoftUni
-Projects and exercises for my education at softuni.bg(https://softuni.bg/curriculum)
+Projects and exercises for my education at www.softuni.bg(https://softuni.bg/curriculum)
 <br>
 # Certificates
 
