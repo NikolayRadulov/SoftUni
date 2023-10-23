@@ -20,3 +20,5 @@ MySQL: https://softuni.bg/certificates/details/172129/01c90320
 Spring Data: https://softuni.bg/certificates/details/180520/d7111bdd
 <br>
 Algorithms fundamentals with java: https://softuni.bg/certificates/details/176692/f04deac5
+<br>
+Data Structures Fundamentals (with Java): https://softuni.bg/certificates/details/185543/82bad61b
