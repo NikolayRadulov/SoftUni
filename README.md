@@ -22,3 +22,6 @@ Spring Data: https://softuni.bg/certificates/details/180520/d7111bdd
 Algorithms fundamentals with java: https://softuni.bg/certificates/details/176692/f04deac5
 <br>
 Data Structures Fundamentals (with Java): https://softuni.bg/certificates/details/185543/82bad61b
+<br>
+Spring Fundamentals: https://softuni.bg/certificates/details/191516/1568dca9
+<br>
