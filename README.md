@@ -25,3 +25,7 @@ Data Structures Fundamentals (with Java): https://softuni.bg/certificates/detail
 <br>
 Spring Fundamentals: https://softuni.bg/certificates/details/191516/1568dca9
 <br>
+Spring Advanced: https://softuni.bg/certificates/details/198314/bf7a9156
+<br>
+<br>
+Java Web Developer diploma: https://softuni.bg/certificates/details/198284/f763bdfe
